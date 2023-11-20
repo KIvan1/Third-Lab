@@ -21,7 +21,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
-      - run: npm install-expo-modules@latest
       - name: Run Lint
-        run: ./Android/gradlew lint
+        run: ./gradlew lint
         continue-on-error: false
